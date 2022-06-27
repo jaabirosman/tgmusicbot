@@ -10,10 +10,10 @@ youtube-dl
 
 # ../../config.py
 MUSIC_CHATS = [
-    -1234567891012,
-    -2345678910123
+    -1001150107625,
+    -1001150107625,
 ]
-MUSIC_USERS = [1234567890]
+MUSIC_USERS = [1008271006]
 MUSIC_DELAY_DELETE_INFORM = 10
 MUSIC_INFORM_AVAILABILITY = (
     "This bot only serves the specified group and"
@@ -73,7 +73,7 @@ main_filter = (
     filters.text
     & filters.chat(MUSIC_CHATS)
     & filters.incoming
-    & ~filters.edited
+    & filters.edited
 )
 
 
